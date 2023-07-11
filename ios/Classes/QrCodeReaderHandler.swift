@@ -124,8 +124,6 @@ class QrCodeReaderHandler{
                 }
                     
                 let imageData = try? Data(contentsOf: url)
-                
-                print(imageData == nil)
                     
                 guard let imageData = imageData else{
                     handler(.failure(.createFileFromUrlError))
